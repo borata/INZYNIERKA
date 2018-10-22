@@ -6,7 +6,7 @@
 }
 
 .overlay{
-  opacity: 0.5;
+  opacity: 0.2;
   background-color: grey;
   position: absolute;
   width: 100vw;
@@ -29,11 +29,12 @@
 }
 
 .logo {
-  width: 200px;
+  width: 350px;
   top: 50%;
   left: 50%;
   position: relative;
   transform: translate(-50%, -50%); 
+  margin-left: 50px
 }
 
 .login-holder{
@@ -47,13 +48,15 @@
   box-shadow: 0px 0px 53px 0px rgba(0,0,0,0.79);
 }
 
-.full-screen-img{
+.tlo3 {
   height: 100vh;
-  background-image: url('src/assets/images/tlo2.png');
+  background-image: url('/assets/images/tlo3.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+
 
 .d-flex {
   display: flex;

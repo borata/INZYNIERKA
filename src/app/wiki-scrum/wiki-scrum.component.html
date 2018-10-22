@@ -1,0 +1,138 @@
+<div class="overlay"></div>
+
+
+
+      <ngb-carousel>
+          <ng-template ngbSlide>
+            <img class="d-block w-100 img-size" src="assets/images/NexusScrum.png" alt="Random first slide">
+          </ng-template>
+          <ng-template ngbSlide>
+            <img class="d-block w-100 img-size" src="assets/images/ScrumBasics.png" alt="Random second slide"> 
+          </ng-template>
+          <ng-template ngbSlide>
+            <img class="d-block w-100 img-size" src="assets/images/scrumvalues.PNG" alt="Random third slide">
+          </ng-template>
+        </ngb-carousel>
+
+
+<ngb-tabset [justify]="justified">
+  <ngb-tab title="Role">
+    <ng-template ngbTabContent>
+        <div class="row">
+            <div class="column2">
+                <div class="card2">
+                    <h5>Zespół Scrumowy</h5>
+                     <p>Składa się z Właściciela Produktu (ang. Product Owner), Scrum Mastera oraz Zespołu Deweloperskiego (ang. Development Team). Samoorganizacja, decyzyjność, kompetencja oraz niezależność to cechy charakteryzujące Zespoły Scrumowe.
+
+                     </p></div>
+                     <br>
+                </div>
+            <div class="column">
+              <div class="card">
+                  <h5>Właściciel Produktu</h5>
+                   <p>Dba o maksymalizację wartości pracy Zespołu Deweloperskiego oraz przede wszystkim samego produktu. Jest to jedyna osoba odpowiedzialna za poprawne prowadzenie i zarządzanie Backlogiem Produktu (ang. Product Backlog). Jego decyzje muszą być respektowane przez cały zespół, a nawet organizację. 
+                   </p></div>
+                   
+              </div>
+            <div class="column">
+              <div class="card">
+                  <h5>Scrum Master</h5>
+                  <p>stoi na straży i pilnuje aby Scrum był przestrzegany i rozumiany. Scrum Master poprzez swoje działania pomaga Zespołowi Deweloperskiemu w wytwarzaniu jak najwyższej wartości produktu. 
+                    </p>
+              </div>
+            </div>
+            <div class="column">
+              <div class="card">
+                  <h5>Zespół Deweloperski</h5>
+                  <p>Formułuje od 3 do 9 profesjonalistów mających na celu ukończenie każdego Sprintu oraz wytworzenia Przyrostu produktu. </p>
+              </div>
+            </div>
+          </div>
+    </ng-template>
+  </ngb-tab>
+  <ngb-tab>
+    <ng-template ngbTabTitle>Wydarzenia</ng-template>
+    <ng-template ngbTabContent>
+        <div class="row">
+            <div class="column2">
+                <div class="card2">
+                    <h5>Wydarzenia występujące w Scrumie</h5>
+                     <p> Wprowadza się je w celu uzyskania regularności oraz aby zredukować potrzebę organizowania innych spotkań. Wszystkie wydarzenie są ograniczone czasowo oraz wspólnie zapewniają, niezbędną przy prowadzeniu projektu, transparencję. 
+                     </p></div>
+                     <br>
+                </div>
+          <div class="column">
+            <div class="card">
+                <h5>Sprint</h5>
+                 <p>nazywany sercem Scruma - trwa maksymalnie jeden miesiąc, podczas którego Zespół Deweloperski wytwarza gotowy do oddania Przyrost produktu. Kolejny Sprint rozpoczyna się zaraz po zakończeniu poprzedniego. W trakcie Sprintu nie wprowadza się żadnych zmian, które mogą stanowić zagrożenie dla jego realizacji. Jednakże sam zakres pracy może być renegocjowany pomiędzy Zespołem Deweloperskim a Właścicielem Produktu. 
+                 </p></div>
+                 
+            </div>
+          <div class="column">
+            <div class="card">
+                <h5>Planowanie Sprintu</h5>
+                <p>(ang. Sprint Planning) - odbywa się na początku każdego Sprintu, dzięki czemu powstaje plan pracy na cały okres jego trwania. Zespół Deweloperski w trakcie planowania ustala co dokładnie może zostać zrealizowane oraz w jaki sposób, a także dokładnie określa cel aktualnego Sprintu. 
+                  </p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card">
+                <h5>Codzienny Scrum</h5>
+                <p>(ang. Daily Scrum) - spotkanie ograniczone czasowo do piętnastu minut, w trakcie którego zespół planuje swoją pracę na najbliższą dobę. Dzięki codziennym spotkaniom Zespół Deweloperski sprawuje kontrolę oraz utrzymuje przejrzystość nad realizowanymi w trakcie Sprintu zadaniami.  Odbywa się on codziennie o stałej porze i jednakowym miejscu, tym samym redukując złożoność samej metodyki.
+                  </p>
+            </div>
+          </div>
+          <br>
+          <div class="column">
+              <div class="card">
+                  <h5>Przegląd Sprintu</h5>
+                   <p>(ang. Sprint Review) - odbywa się na zakończenie Sprintu oraz umożliwia przeprowadzenie analizy tego co zostało ukończone w Sprincie. Trwa maksymalnie cztery godziny dla miesięcznego Sprintu. Rezultatem tego wydarzenia jest zaktualizowany Backlog Produktu, wskazując na to, które zadania prawdopodobnie zostaną zrealizowane w trakcie nadchodzącego Sprintu. 
+ 
+                   </p></div>
+                   
+              </div>
+              <div class="column">
+                  <div class="card">
+                      <h5>Retrospektywa Sprintu</h5>
+                       <p>(ang. Sprint Retrospective) - odbywa się po Przeglądzie Sprintu, a przed jego Planowaniem. Jest ograniczona czasowo do trzech godzin dla miesięcznego Sprintu. Podczas tego wydarzenia Zespół Deweloperski ma okazję przeanalizować swoją pracę w trakcie Sprintu w celu wprowadzenia ewentualnych usprawnień do procesu wytwarzania Przyrostu. 
+                       </p></div>
+                       
+                  </div>
+        </div>
+    </ng-template>
+  </ngb-tab>
+  <ngb-tab title="Artefakty">
+    <ng-template ngbTabContent>
+      <div class="row">
+          <div class="column2">
+              <div class="card2">
+                  <h5>Artefakty Scruma</h5>
+                   <p> (ang. Scrum Artifacts) to Praca czy wartość, dzięki której w Scrumie utrzymywana jest transparentność, możliwość inspekcji oraz adaptacji. Należą do nich:
+                   </p></div>
+                   <br>
+              </div>
+        <div class="column">
+          <div class="card">
+              <h5>Backlog Produktu</h5>
+               <p>(ang. Product Backlog), czyli czytelny zbiór wszystkich informacji powiązanych z rozwojem produktu. Jest to jedyne źródło wymagań odnośnie produktu, a odpowiedzialnym za niego jest Właściciel Produktu. Backlog w formie listy prezentuje wszystkie funkcje, ulepszenia, wymagania, cechy, a także korekty, reprezentujące zmiany, które mogą zajść. 
+               </p></div>
+               
+          </div>
+        <div class="column">
+          <div class="card">
+              <h5>Backlog Sprintu</h5>
+              <p>(ang. Sprint Backlog) jest analogiczny dla Backlogu Produktu jednakże zawiera elementy wybrane do zrealizowania w trakcie Sprintu. 
+                </p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+              <h5>Przyrost</h5>
+              <p>(ang. Increment) to suma wszystkich elementów Backlogu zrealizowanych w trakcie trwania Sprintu. </p>
+          </div>
+        </div>
+      </div>
+    </ng-template>
+  </ngb-tab>
+</ngb-tabset>
+

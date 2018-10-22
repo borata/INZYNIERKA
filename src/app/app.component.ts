@@ -1,4 +1,5 @@
 import { Component, ViewEncapsulation } from '@angular/core'; 
+import { AngularFireDatabase } from 'angularfire2/database';
 
 @Component({
   selector: 'app-root',
@@ -8,4 +9,5 @@ import { Component, ViewEncapsulation } from '@angular/core';
 })
 export class AppComponent {
   title = 'praca-inzynierska';
+  products: any[];
 }

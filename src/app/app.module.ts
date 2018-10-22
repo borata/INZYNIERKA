@@ -17,13 +17,23 @@ import { ReactiveFormsModule } from '@angular/forms';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
+import { AnkietyComponent } from './ankiety/ankiety.component';
+import { WikiScrumComponent } from './wiki-scrum/wiki-scrum.component';
+import { WikiNexusComponent } from './wiki-nexus/wiki-nexus.component';
+
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     UserComponent,
-    RegisterComponent
+    RegisterComponent,
+    AnkietyComponent,
+    WikiScrumComponent,
+    WikiNexusComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +42,8 @@ import { AppComponent } from './app.component';
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule, // imports firebase/firestore, only needed for database features
     AngularFireAuthModule,
-    NgbModule.forRoot() // imports firebase/auth, only needed for auth features
+    NgbModule.forRoot(),
+    AngularFontAwesomeModule // imports firebase/auth, only needed for auth features
   ],
   providers: [AuthService, UserService, UserResolver, AuthGuard],
   bootstrap: [AppComponent]

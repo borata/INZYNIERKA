@@ -8,15 +8,14 @@ import { FirebaseUserModel } from '../core/user.model';
 import {NgbModal} from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
-  selector: 'page-user',
-  templateUrl: 'user.component.html',
-  styleUrls: ['user.component.css']
+  selector: 'app-ankiety',
+  templateUrl: './ankiety.component.html',
+  styleUrls: ['./ankiety.component.css']
 })
-export class UserComponent implements OnInit{
+export class AnkietyComponent implements OnInit{
 
   user: FirebaseUserModel = new FirebaseUserModel();
   profileForm: FormGroup;
-  model;
 
   constructor(
     public userService: UserService,
@@ -26,7 +25,6 @@ export class UserComponent implements OnInit{
     private fb: FormBuilder,
     private modalService: NgbModal
   ) {
-    
 
   }
 
@@ -60,8 +58,5 @@ export class UserComponent implements OnInit{
     }, (error) => {
       console.log("Błąd wylogowania", error);
     });
-  }
-  open(content) {
-    this.modalService.open(content);
   }
 }
