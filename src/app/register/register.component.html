@@ -1,5 +1,5 @@
 <div class="overlay"></div>
-<div class="tlo3">
+<div class="tlo5">
 <div class="login-holder absolut-center">
     <div class="row h-100">
         <div class="col-sm-6 h-100">
@@ -18,7 +18,10 @@
                           <label class="error small">{{errorMessage}}</label>
                           <label class="success">{{successMessage}}</label>
                     </div>
-        
+                    <div class="form-group">
+                        <label>Grupa:</label>
+                        <input type="string" formControlName="group" class="form-control">
+                    </div>
                     <div class="d-flex flex-column">
                       <div class="col-md-2 col-md-offset-2"></div>
                       <button type="submit" class="btn btn-primary" (click)="tryRegister(registerForm.value)">
@@ -32,7 +35,7 @@
                       
 
                         <div class="row small" >
-                           <p>Nie masz jeszcze konta? <a href="/register">Utwórz konto</a></p>
+                           <p>Masz już konto? <a href="/login">Zaloguj się</a></p>
                         </div>
                         
                         

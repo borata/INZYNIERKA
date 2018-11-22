@@ -23,7 +23,7 @@
   }
   
   .overlay{
-    opacity: 0.2;
+    opacity: 0.1;
     background-color: grey;
     position: absolute;
     width: 100vw;
@@ -65,12 +65,14 @@
     box-shadow: 0px 0px 53px 0px rgba(0,0,0,0.79);
   }
   
-  .tlo3 {
+  .tlo5 {
     height: 100vh;
-    background-image: url('/assets/images/tlo3.jpg');
+    background-image: url('/assets/images/tlo4.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
+  
   }
    
   .d-flex {

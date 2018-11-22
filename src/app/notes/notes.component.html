@@ -1,0 +1,42 @@
+<div class="overlay"></div>
+<div class="tlo5"></div>
+<div class="holder absolut-center container-fluid">
+<div class=""style="background-color:ghostwhite;">
+
+  <div class="mt-2 mb-2 center">
+    <button type="button"  [routerLink]="['/dodaj-notatke']" class="btn btn-info">
+      Dodaj notatkę
+    </button>
+  </div>
+  <table class ="table table-bordered">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Numer Sprintu</th>
+        <th>Skryba</th>
+        <th>Treść</th>
+        <th>Data</th>
+      
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of items">
+          <td>{{item.id}}</td>
+          <td>{{item.nr_Sprintu}}</td>
+          <td>{{item.skryba}}</td>
+          <td>{{item.tresc}}</td>
+          <td>{{item.data | date}}</td>
+      
+        <td>
+          <i [routerLink]="['/dodaj-notatke', item.id]" class="fa fa-edit"></i>
+          <i (click)="deleteNotes(item); false" class="fa fa-trash"></i>
+        </td>
+
+      </tr>
+    </tbody>
+
+
+  </table>
+</div>
+</div>

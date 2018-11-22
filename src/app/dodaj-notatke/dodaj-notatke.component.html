@@ -1,0 +1,69 @@
+<div class="overlay"></div>
+<div class="tlo5">
+<div class="full-screen-img"></div>
+<div class="holder absolut-center container-fluid">
+
+<div class=""style="background-color:ghostwhite;">
+
+  <form (ngSubmit)="onSubmit()">
+    <div class="row">
+      <table class="table table-bg">
+
+          <tr>
+              <td>
+                <div class= "input-field col s5">
+                  <label> ID</label>
+                  <input type="text" class="form-control" placeholder="Wprowadź id" [(ngModel)]="item.id" name="id">
+                </div>
+              </td>
+          </tr>
+
+          <tr>
+              <td>
+                <div class= "input-field col s5">
+                  <label>Skryba</label>
+                  <input type="text" class="form-control" placeholder="Wpisz swoje imię" [(ngModel)]="item.skryba" name="skryba">
+                </div>
+              </td>
+        </tr>
+        
+        <tr>
+            <td>
+              <div class= "input-field col s5">
+                <label> Numer Sprintu</label>
+                <input type="number" class="form-control" placeholder="Dodaj numer Sprintu" [(ngModel)]="item.nr_Sprintu" name="nr_Sprintu">
+              </div>
+            </td>
+        </tr>
+        
+      
+        <tr>
+              <td>
+                <div class= "input-field col s5">
+                  <label>Treść</label>
+                  <textarea type="text" class="form-control" placeholder="Dodaj treść" [(ngModel)]="item.tresc" name="tresc"></textarea>
+                </div>
+              </td>
+        </tr>
+        <tr>
+            <td>
+              <div class= "input-field col s5">
+                <label>Data</label>
+                <input type="date" class="form-control" placeholder="Wybierz datę" [(ngModel)]="item.data" name="data">
+              </div>
+            </td>
+      </tr> 
+      <tr>
+        <td class="center">
+          <input type="submit" value="Dodaj" class="btn btn-info">
+          
+        </td>
+      </tr>
+
+      </table>
+    </div>
+
+  </form>
+</div>
+</div>
+</div>

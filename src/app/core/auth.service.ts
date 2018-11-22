@@ -5,6 +5,7 @@ import * as firebase from 'firebase/app';
 
 @Injectable()
 export class AuthService {
+    user: any;
 
   constructor(
    public afAuth: AngularFireAuth

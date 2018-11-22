@@ -1,5 +1,5 @@
 <div class="overlay"></div>
-<!--<div class="tlo3"></div>-->
+<div class="tlo5">
 <div class="btn-holder-logout logout-position">
     <div class="container h-100">
         <div class="item-holder-logout">
@@ -9,16 +9,16 @@
     </div>
 </div>
 
-<div class="user-holder sprint3 ">
+<!-- <div class="user-holder sprint1 ">
     <div class="container-fluid  text-center">
-            <h3>SPRINT 3</h3>
+            <h3>SPRINT 4</h3>
         <div class="box h-100 align-items-stretch justify-content-between text-center">
                 
             <div class="item-holder text-center">
                 <h4>
                     <br>WYPEŁNIJ
                     <br>ANKIETĘ</h4>
-                     <a href="https://goo.gl/forms/QrixBOyHVcFAwM6H2">
+                     <a href="https://goo.gl/forms/isLfKNiW6eoMfOSz2">
                         <span class="fa-stack fa-lg fa-size" style="height: 50%;">
                             <i class="fa fa-circle fa-stack-2x "></i>
                             <i class="fa fa-wpforms fa-stack-1x fa-inverse"></i>  </span>
@@ -37,16 +37,16 @@
                     </span>
                 </div>
         </div>
-            <div class="item-holder text-center" [routerLink]="['/wiki']">
+            <div class="item-holder text-center" [routerLink]="['/nexus-trzy']">
                 <h4>
                     <br>WIKI 
-                    <br>SCRUM</h4>
+                    <br>NEXUS</h4>
                 <span class="fa-stack fa-lg fa-size" style="height: 50%;">
                     <i class="fa fa-circle fa-stack-2x"></i>
                     <i class="fa fa-book fa-stack-1x fa-inverse"></i>
                 </span>
             </div>
-            <div class="item-holder text-center">
+            <div class="item-holder text-center" [routerLink]="['/notes']">
                     <div class="h-100">
                         <h4>
                             <br>NEXUS
@@ -54,7 +54,7 @@
                         
                         <span class="fa-stack fa-lg fa-size" style="height: 50%;">
                             <i class="fa fa-circle  fa-stack-2x"></i>
-                            <i class="fa fa-calendar fa-stack-1x fa-inverse"></i>
+                            <i class="fa fa-sticky-note fa-stack-1x fa-inverse"></i>
                         </span>
                     </div>
             </div>
@@ -64,14 +64,14 @@
 
 <div class="user-holder sprint2 ">
     <div class="container-fluid  text-center">
-            <h3>SPRINT 2</h3>
+            <h3>SPRINT 3</h3>
         <div class="box h-100 align-items-stretch justify-content-between text-center">
                 
             <div class="item-holder text-center">
                 <h4>
                     <br>WYPEŁNIJ
                     <br>ANKIETĘ</h4>
-                     <a href="https://goo.gl/forms/QrixBOyHVcFAwM6H2">
+                     <a href="https://goo.gl/forms/m46amPEHyiDDUmi43">
                         <span class="fa-stack fa-lg fa-size" style="height: 50%;">
                             <i class="fa fa-circle fa-stack-2x "></i>
                             <i class="fa fa-wpforms fa-stack-1x fa-inverse"></i>  </span>
@@ -90,16 +90,16 @@
                     </span>
                 </div>
         </div>
-            <div class="item-holder text-center" [routerLink]="['/wiki']">
+            <div class="item-holder text-center" [routerLink]="['/nexus-trzy']">
                 <h4>
                     <br>WIKI 
-                    <br>SCRUM</h4>
+                    <br>NEXUS</h4>
                 <span class="fa-stack fa-lg fa-size" style="height: 50%;">
                     <i class="fa fa-circle fa-stack-2x"></i>
                     <i class="fa fa-book fa-stack-1x fa-inverse"></i>
                 </span>
             </div>
-            <div class="item-holder text-center">
+            <div class="item-holder text-center" [routerLink]="['/notes']">
                     <div class="h-100">
                         <h4>
                             <br>NEXUS
@@ -107,14 +107,67 @@
                         
                         <span class="fa-stack fa-lg fa-size" style="height: 50%;">
                             <i class="fa fa-circle  fa-stack-2x"></i>
-                            <i class="fa fa-calendar fa-stack-1x fa-inverse"></i>
+                            <i class="fa fa-sticky-note fa-stack-1x fa-inverse"></i>
                         </span>
                     </div>
             </div>
         </div>
-    </div>
+    </div>  -->
 
-<div class="user-holder sprint1 bottom">
+
+  <div class="user-holder sprint1 ">
+    <div class="container-fluid  text-center">
+            <h3>SPRINT 2</h3>
+        <div class="box h-100 align-items-stretch justify-content-between text-center">
+                
+            <div class="item-holder text-center">
+                <h4>
+                    <br>WYPEŁNIJ
+                    <br>ANKIETĘ</h4>
+                     <a href="https://goo.gl/forms/Kp4vuOM3SNXNUcKn2">
+                        <span class="fa-stack fa-lg fa-size" style="height: 50%;">
+                            <i class="fa fa-circle fa-stack-2x "></i>
+                            <i class="fa fa-wpforms fa-stack-1x fa-inverse"></i>  </span>
+                    </a>
+              
+            </div>
+            <div class="item-holder text-center" (click)="open(content)">
+                <div class="h-100">
+                    <h4>
+                        <br>NASZ
+                        <br> SPRINT </h4>
+                    
+                    <span class="fa-stack fa-lg fa-size" style="height: 50%;">
+                        <i class="fa fa-circle  fa-stack-2x"></i>
+                        <i class="fa fa-calendar fa-stack-1x fa-inverse"></i>
+                    </span>
+                </div>
+        </div>
+            <div class="item-holder text-center" [routerLink]="['/nexus']">
+                <h4>
+                    <br>WIKI 
+                    <br>NEXUS</h4>
+                <span class="fa-stack fa-lg fa-size" style="height: 50%;">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-book fa-stack-1x fa-inverse"></i>
+                </span>
+            </div>
+            <div class="item-holder text-center" [routerLink]="['/notes']" >
+                    <div class="h-100">
+                        <h4>
+                            <br>NEXUS
+                            <br> TEAM </h4>
+                        
+                        <span class="fa-stack fa-lg fa-size" style="height: 50%;">
+                            <i class="fa fa-circle  fa-stack-2x"></i>
+                            <i class="fa fa-sticky-note fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </div>
+            </div>
+        </div>
+    </div> 
+
+<div class="user-holder sprint2 bottom">
     <div class="container-fluid  text-center ">
             <h3>SPRINT 1</h3>
         <div class="box h-100 align-items-stretch justify-content-between">
@@ -150,7 +203,7 @@
                     <i class="fa fa-book fa-stack-1x fa-inverse"></i>
                 </span>
             </div>
-            <div class="item-holder text-center">
+            <div class="item-holder text-center" [routerLink]="['/notes']">
                     <div class="h-100">
                         <h4>
                             <br>NEXUS
@@ -158,11 +211,12 @@
                         
                         <span class="fa-stack fa-lg fa-size" style="height: 50%;">
                             <i class="fa fa-circle  fa-stack-2x"></i>
-                            <i class="fa fa-calendar fa-stack-1x fa-inverse"></i>
+                            <i class="fa fa-sticky-note fa-stack-1x fa-inverse"></i>
                         </span>
                     </div>
             </div>
         </div>
+    </div>  
     </div>
 
     
@@ -177,14 +231,20 @@
       </button>
     </div>
     <div class="modal-body">
-      <p>Czas trwania: wprowadź<br>
-        Cel:wprowadź<br>
-        Termin Daily Scrum:wprowadź<br>
-        Miejsce Daily Scrum:wprowadź<br>
-        Termin Sprint Review:
-        Termin Sprint Retrospective:wprowadź<br>
-        Scrum Master:wprowadź<br>
-        Product Owner:wprowadź</p>
+            <label>Czas trwania:</label>
+            <input type="text" placeholder="Wpisz czas trwania sprintu" class="form-control">
+            <label>Godzina</label>
+            <input type="text" placeholder="Wprowadź godzinę Daily Scrum" class="form-control">
+            <label>Miejsce</label>
+            <input type="text" placeholder="Wprowadź miejsce Daily Scrum" class="form-control">
+            <label>Sprint Review</label>
+            <input type="date" placeholder="Wybierz termin Sprint Review" class="form-control">
+            <label>Sprint Retrospective</label>
+            <input type="date" placeholder="Wybierz termin Sprint Review" class="form-control">
+            <label>Scrum Master</label>
+            <input type="text" placeholder="Imię i nazwisko Scrum Mastera" class="form-control">
+            <label>Product Owner</label>
+            <input type="text" placeholder="Imię i nazwisko Product Ownera" class="form-control">
     </div>
     
     <div class="modal-footer">
