@@ -1,5 +1,7 @@
 import { Component, ViewEncapsulation } from '@angular/core'; 
-import { AngularFireDatabase } from 'angularfire2/database';
+// import { AngularFireDatabase } from 'angularfire2/database';
+import { FirebaseListObservable, AngularFireDatabase } from '@angular/fire/database-deprecated';
+
 
 @Component({
   selector: 'app-root',

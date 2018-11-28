@@ -51,12 +51,12 @@ export class AnkietyComponent implements OnInit{
     }, err => console.log(err))
   }
 
-  logout(){
-    this.authService.doLogout()
-    .then((res) => {
-      this.location.back();
-    }, (error) => {
-      console.log("Błąd wylogowania", error);
-    });
-  }
+  // logout(){
+  //   this.authService.doLogout()
+  //   .then((res) => {
+  //     this.location.back();
+  //   }, (error) => {
+  //     console.log("Błąd wylogowania", error);
+  //   });
+  // }
 }

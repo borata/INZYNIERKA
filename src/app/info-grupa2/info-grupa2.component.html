@@ -1,0 +1,50 @@
+<div class="overlay"></div>
+<div class="tlo5"></div>
+<div class="holder absolut-center container-fluid">
+<div class=""style="background-color:ghostwhite;">
+
+  <div class="mt-2 mb-2 center">
+    <button type="button"  [routerLink]="['/dodaj-info2']" class="btn btn-info">
+      Dodaj notatkę
+    </button>
+  </div>
+  <table class ="table table-bordered">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Cel</th>
+        <th>Czas Sprintu</th>
+        <th>Godzina Daily</th>
+        <th>Miejsce Daily</th>
+        <th>Termin Review</th>
+        <th>Scrum Master</th>
+        <th>Product Owner</th>
+        <th>Trello</th>
+
+      
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of items">
+          <td>{{item.id}}</td>
+          <td>{{item.cel}}</td>
+          <td>{{item.czas_trwania}}</td>
+          <td>{{item.godzina_daily}}</td>
+          <td>{{item.miejsce_daily}}</td>
+          <td>{{item.review | date}}</td>
+          <td>{{item.scrum_master}}</td>
+          <td>{{item.product_owner}}</td>
+          <td>{{item.trello}}</td>
+      
+        <td>
+          <i [routerLink]="['/dodaj-info1', item.id]" class="fa fa-edit"></i>
+          <i (click)="deleteInfos1(item); false" class="fa fa-trash"></i>
+        </td>
+
+      </tr>
+    </tbody>
+
+
+  </table>
+</div>
+</div>

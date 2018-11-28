@@ -1,0 +1,102 @@
+<div class="overlay"></div>
+<div class="tlo5">
+<div class="full-screen-img"></div>
+<div class="holder absolut-center container-fluid">
+
+<div class=""style="background-color:ghostwhite;">
+
+  <form (ngSubmit)="onSubmit()">
+    <div class="row">
+      <table class="table table-bg">
+
+          <tr>
+              <td>
+                <div class= "input-field col s8">
+                  <label> ID</label>
+                  <input type="text" class="form-control" placeholder="Wprowadź id" [(ngModel)]="item.id" name="id">
+                </div>
+              </td>
+          </tr>
+          <tr>
+            <td>
+              <div class= "input-field col s8">
+                <label> Cel </label>
+                <input type="text" class="form-control" placeholder="Jaki jest cel Sprintu? " [(ngModel)]="item.cel" name="cel">
+              </div>
+            </td>
+        </tr>
+
+          <tr>
+              <td>
+                <div class= "input-field col s8">
+                  <label>Czas trwania Sprintu</label>
+                  <input type="text" class="form-control" placeholder="Podaj czas trwania Sprintu" [(ngModel)]="item.czas_trwania" name="czas trwania">
+                </div>
+              </td>
+        </tr>
+
+        <tr>
+            <td>
+              <div class= "input-field col s8">
+                <label> Godzina Daily</label>
+                <input type="text" class="form-control" placeholder="hh:mm" [(ngModel)]="item.godzina_daily" name="godzina Daily">
+              </div>
+            </td>
+        </tr>
+        
+      
+        <tr>
+              <td>
+                <div class= "input-field col s8">
+                  <label>Miejsce Daily</label>
+                  <input type="text" class="form-control" placeholder="Podaj miejsce Daily Scrum" [(ngModel)]="item.miejsce_daily" name="miejsce daily">
+                </div>
+              </td>
+        </tr>
+        <tr>
+            <td>
+              <div class= "input-field col s8">
+                <label>Review</label>
+                <input type="date" class="form-control" placeholder="Wybierz datę" [(ngModel)]="item.review" name="review">
+              </div>
+            </td>
+      </tr> 
+      
+    <tr>
+        <td>
+          <div class= "input-field col s8">
+            <label>Scrum Master</label>
+            <input type="text" class="form-control" placeholder="Wpisz Imię i Nazwisko SM" [(ngModel)]="item.scrum_master" name="scrum master">
+          </div>
+        </td>
+  </tr>
+  <tr>
+      <td>
+        <div class= "input-field col s8">
+          <label>Product Owner</label>
+          <input type="text" class="form-control" placeholder="Wpisz Imię i Nazwisko PO" [(ngModel)]="item.product_owner" name="product_owner">
+        </div>
+      </td>
+</tr>
+<tr>
+    <td>
+      <div class= "input-field col s8">
+        <label>Trello</label>
+        <input type="text" class="form-control" placeholder="Podaj link do Trello" [(ngModel)]="item.trello" name="trello">
+      </div>
+    </td>
+</tr>
+      <tr>
+        <td class="center">
+          <input type="submit" value="Dodaj" class="btn btn-info">
+          
+        </td>
+      </tr>
+
+      </table>
+    </div>
+
+  </form>
+</div>
+</div>
+</div>
